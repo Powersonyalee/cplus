@@ -27,5 +27,8 @@
     <ClCompile Include="forfor2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="input_gugudan.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
