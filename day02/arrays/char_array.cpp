@@ -14,7 +14,7 @@ int main() {
 	//Ãâ·Â
 
 	for (int i = 0; i < 26; i++) {
-		cout << alphabets[i] << " ";
+		cout << alphabets[i] << ", " << (int)alphabets[i] <<endl;
 	}
 
 
