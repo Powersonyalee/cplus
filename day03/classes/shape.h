@@ -1,14 +1,14 @@
 # include <iostream>
 using namespace std;
 
-struct Point { //struct´Â ±âº»ÀÌ public!! Áï Á¢±Ù °¡´ÉÇÔ
+struct Point { //structëŠ” ê¸°ë³¸ì´ public!! ì¦‰ ì ‘ê·¼ ê°€ëŠ¥í•¨
 
 	int x, y;
 
 	Point(int x=0, int y=0) {
 		this->x = x; 
-		this->y = y; // this.´©¸£¸é µÚ¿¡ ÀÚµ¿À¸·Î!! 
-		cout << "Á¡(" << x <<  ", "  << y << ")»ı¼ºÀÚ\n";
+		this->y = y; // this.ëˆ„ë¥´ë©´ ë’¤ì— ìë™ìœ¼ë¡œ!! 
+		cout << "ì (" << x <<  ", "  << y << ")ìƒì„±ì\n";
 	}
 
 };
@@ -19,15 +19,22 @@ class Circle {
 	int radius;
 	
 public:
+	
+	Circle(int cx = 0, int cy = 0, int r = 0) : center(cx, cy), radius(r) {
+		cout << "ì›(ë°˜ì§€ë¦„ = " << radius << ")ìƒì„±ì\n";
+	}
+	
+	
+	/*
 	Circle(int x, int y, int radius) {
 
 		center.x = x;
 		center.y = y;
 		this->radius = radius;
-		cout << "¿øÀÇ ¹İÁö¸§: " << radius << endl  <<"Áß½ÉÀº (" << center.x << "." << center.y << ")";
+		cout << "ì›ì˜ ë°˜ì§€ë¦„: " << radius << endl  <<"ì¤‘ì‹¬ì€ (" << center.x << "." << center.y << ")";
 
 	}
 
-
+  */
 
 };
