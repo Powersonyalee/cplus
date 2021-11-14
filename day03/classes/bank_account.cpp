@@ -1,6 +1,21 @@
 # include "bank_account.h"
 
 
+
+BankAccount::BankAccount() {}; //기본생성자
+
+BankAccount::BankAccount(string a, string own, int bal) {
+
+	ano = a;
+	owner = own;
+	balance = bal;
+
+}
+
+
+BankAccount::~BankAccount() {}; //소멸자
+
+
 void BankAccount::setAno(string a) {
 	ano = a;
 }
@@ -23,7 +38,6 @@ void BankAccount::setbalance(int c) {
 }
 
 int BankAccount::getbalance(){
-
 	return balance;
 
 }

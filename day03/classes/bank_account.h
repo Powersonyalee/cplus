@@ -11,6 +11,10 @@ class BankAccount {
 
 
 public:
+	BankAccount(); //기본생성자  // main에서 사용했으므로 명시해야
+	BankAccount(string a, string own, int bal); // 매개변수 사용
+	~BankAccount(); //소멸자
+
 	void setAno(string ano);
 	string getAno();
 	
